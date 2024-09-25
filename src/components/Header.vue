@@ -12,11 +12,6 @@
           <span class=""> </span>
         </button>
 
-        <div class="form-inline">
-            <img src="assets/images/cambodia.png" @click="changeLocale('khm')" width="20"/>&nbsp;
-            <img src="assets/images/usa.png" @click="changeLocale('en')" width="20"/>
-            </div>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav  ">
             <li class="nav-item" :class="{ active: $route.path == '/'}">
@@ -43,7 +38,10 @@
             <li class="nav-item">
               <router-link to="/login" class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true">&nbsp;</i>{{ $t('Login') }}</router-link>
             </li>         
-
+            <div class="form-inline">
+            <img src="assets/images/cambodia.png" @click="changeLocale('khm')" width="20"/>&nbsp;
+            <img src="assets/images/usa.png" @click="changeLocale('en')" width="20"/>
+            </div>
             <form class="form-inline">
               <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                 <i class="fa fa-search" aria-hidden="true"></i>
