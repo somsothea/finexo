@@ -6,13 +6,13 @@
           </div>
           <div class="detail-box">
             <h5>
-              <router-link :to="`/course/${link}`">{{ title }}</router-link>
+              <router-link :to="`/course/${storebanner}`">{{ storename }}</router-link>
             </h5>
             <p>
-            {{description}}
+            {{storeaddress}}
             </p>
             <p>
-            {{price}}
+            {{category}}
             </p>
           </div>
         </div>
@@ -20,6 +20,6 @@
     </template>
     <script>
         export default{
-            props: ["id", "title", "description", "image", "link"],
+            props: ["id", "storename", "storeaddress", "storebanner", "category"],
         };
     </script>
