@@ -12,10 +12,10 @@
         <div class="row">
           <CourseCard v-for="(item, index) in courses"
             :key="index"
-            :title="item.title"
-            :description="item.shortDescription"
-            :image="item.image"     
-            :link="item.titleURL">  
+            :title="item.storename"
+            :description="item.storeaddress"
+            :image="item.category"     
+            :link="item.storebanner">  
           </CourseCard>
         </div>
       </div>
@@ -35,7 +35,7 @@ export default {
     },
     async created(){
         //call api
-        const url = "/v1/courses";
+        const url = "/v1/stores";
         //promise and async
         const response = await axios.get(url);
         const courses = response.data;

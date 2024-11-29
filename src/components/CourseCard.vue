@@ -20,6 +20,6 @@
     </template>
     <script>
         export default{
-            props: ["link", "image", "title", "description", "price"],
+            props: ["id", "title", "description", "image", "link"],
         };
     </script>
